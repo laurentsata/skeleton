@@ -1,0 +1,27 @@
+.container
+{
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  justify-content: center;
+  //height: 80vh;
+
+
+  flex-wrap: wrap;
+  justify-content: center; /* Pour espacer les images horizontalement */
+  margin-top: 5%;
+}
+
+.cakes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+.footer{
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 20px;
+}

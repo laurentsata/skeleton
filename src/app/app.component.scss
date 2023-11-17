@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% de la hauteur de la vue */
+}
+
+.wrapper {
+ margin: 0;
+  flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
+  /* Autres styles pour le contenu de la page */
+  background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  /* Styles pour le pied de page */
+  margin-top: auto; /* Le pied de page restera en bas de la page */
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  //height: 0rem;
+  //top: 252px;
+  //position: absolute;
+  //top: 32rem;
+
+}
+
+.links-container {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0rem;
+  background-color: #f19915;
+  height: 2rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 120%;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(0, 174, 255);
+  border-bottom: 10px solid #fff;
+}
+
+.active-link {
+  color: rgb(0, 174, 255);
+  border-bottom: 10px solid #fff;
+}
+header{
+  // background-color: #94939d;
+  background-color: #f19915;
+  //height: 9%;
+  align-items: center;
+}
+
+@media screen and (max-width: 428px) {
+  a {
+    font-size: 80%;
+  }
+
+  .header-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  a {
+    font-size: 70%;
+  }
+}

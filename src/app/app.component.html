@@ -1,0 +1,34 @@
+<header style=" position: fixed; width: 100%">
+  <img
+  src="https://knightparabellum.000webhostapp.com/img/headerGateau.png"
+  alt="footer"
+  style="width: 100%;"
+/>
+
+    <div class="navContainer" style=" width: 100%">
+      <div class="links-container">
+        <div class="links">
+          <a [routerLink]="['/']" [ngClass]="{ 'active-link': isLinkActive('/') }">Accueil</a>
+          <a [routerLink]="['/card']" [ngClass]="{ 'active-link': isLinkActive('/card') }">Card</a>
+          <a [routerLink]="['/contact']" [ngClass]="{ 'active-link': isLinkActive('/contact') }">Contact</a>
+          <a href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5">Accès privé</a>
+        </div>
+      </div>
+    </div>
+</header>
+
+<div class="wrapper">
+<!--  <div class="navContainer" style="position:fixed; width: 100%">-->
+<!--    <div class="links-container">-->
+<!--      <div class="links">-->
+<!--        <a [routerLink]="['/']" [ngClass]="{ 'active-link': isLinkActive('/') }">Accueil</a>-->
+<!--        <a [routerLink]="['/card']" [ngClass]="{ 'active-link': isLinkActive('/card') }">Card</a>-->
+<!--        <a [routerLink]="['/contact']" [ngClass]="{ 'active-link': isLinkActive('/contact') }">Contact</a>-->
+<!--        <a href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5">Accès privé</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <router-outlet></router-outlet>
+</div>
+
