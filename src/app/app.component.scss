@@ -5,17 +5,19 @@
 }
 
 .wrapper {
- margin: 0;
+margin-top: 10%;
   flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
-  /* Autres styles pour le contenu de la page */
+
+//  margin: 0;
+  flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
   background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.png");
   background-size: cover;
   background-position: center;
+  background-color: rgba(255, 255, 25, 0.2); /* Remplace ces valeurs par la couleur de fond souhaitée et l'opacité désirée */
+  background-blend-mode: overlay; /* Cette propriété peut être utilisée pour ajuster le mélange de l'image et de la couleur de fond */
 }
-
 .footer {
-  /* Styles pour le pied de page */
-  margin-top: auto; /* Le pied de page restera en bas de la page */
+  margin-top: auto; /* Le footer restera en bas de la page */
 }
 
 .navContainer {
@@ -25,8 +27,13 @@
   //top: 252px;
   //position: absolute;
   //top: 32rem;
-
 }
+
+
+.transparent-nav {
+  background-color: transparent !important;
+}
+
 
 .links-container {
   width: 100%;
@@ -74,7 +81,7 @@ header{
     font-size: 80%;
   }
 
-  .header-container {
+  header {
     display: none;
   }
 }
