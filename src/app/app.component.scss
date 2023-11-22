@@ -19,6 +19,14 @@ margin-top: 10%;
 .footer {
   margin-top: auto; /* Le footer restera en bas de la page */
 }
+.footer p {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f19915;
+  color: white;
+  font-size: 0.8rem;
+}
+
 
 .navContainer {
   display: flex;
@@ -147,7 +155,7 @@ nav ul {
     // background: #f19915;
     width: 100%;
     text-align: center;
-    transition: 0.25s;
+    transition: 0.40s;
   }
   nav li {
     padding: 3px 0;
@@ -182,4 +190,5 @@ nav ul {
     z-index: 700;
     top: 50px;
   }
+
 }
