@@ -53,28 +53,6 @@ export class HomeComponent {
 		}
 	}
 
-  ngAfterViewInit() {
-    const links = document.querySelectorAll("nav li");
-    const icons = document.getElementById("icons"); // Assurez-vous d'ajuster l'ID en conséquence
-    const nav = document.getElementById("nav"); // Assurez-vous d'ajuster l'ID en conséquence
-
-    if (icons) {
-      icons.addEventListener("click", () => {
-        if (nav) {
-          nav.classList.toggle("active");
-        }
-      });
-    }
-
-    if (links) {
-      links.forEach((link) => {
-        link.addEventListener("click", () => {
-          if (nav) {
-            nav.classList.remove("active");
-          }
-        });
-      });
-    }
-  }
+ 
 
 }

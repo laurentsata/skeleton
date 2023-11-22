@@ -28,27 +28,33 @@ button {
   color: white;
   border-radius: 8px;
 }
-
+h3{
+  display: none;}
 ngb-carousel {
   img {
     max-width: 100%;  // Assure que l'image ne dépasse pas la largeur du conteneur
-    height: auto;     // Conserver les proportions de l'image
+    height: auto;     // Conserve les proportions de l'image
     max-height: 18rem;
     border-radius: 10px;
     border: 2px solid black;
   }
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
-  .results {
-      grid-template-columns: repeat(2, 1fr);
-  }
-  input[type="text"] {
-      width: 70%;
-  }
-}
-@media (max-width: 499px) {
+
+@media (max-width: 600px)  {
   .results {
       grid-template-columns: 1fr;
   }
+  .container {
+    margin-top: 25%;
+}
+ngb-carousel {
+  img {
+    display: none;
+  }
+}
+
+h3{
+  display: block;
+}
 }
