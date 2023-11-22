@@ -132,6 +132,7 @@ nav ul {
   #icons:before {
     content: "\2630";
     color: white;
+    font-size:large;
   }
   .active #icons:before {
     content: "\2716";
@@ -175,22 +176,6 @@ nav ul {
     z-index: 1; /* Valeur à ajuster selon vos besoins */
   }
 
-  // li{
-
-  //   width: 25%;
-
-  // }
-// .darkImg{
-//   display: none;
-// }
-
-// img{
-//   display: none;
-// }
-
-// #headerImg{
-//   display: none;
-// }
 
   links-container {
     position:absolute;
