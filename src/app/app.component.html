@@ -3,28 +3,53 @@
   src="https://knightparabellum.000webhostapp.com/img/headerGateau.png"
   alt="header image"
   style="width: 100%;"
+
 />
 
     <div class="navContainer" style=" width: 100%">
       <div class="links-container">
-        <div class="links">
-          <a [routerLink]="['/']" [ngClass]="{ 'active-link': isLinkActive('/') }">Accueil</a>
-          <a [routerLink]="['/card']" [ngClass]="{ 'active-link': isLinkActive('/card') }">Card</a>
-          <a [routerLink]="['/contact']" [ngClass]="{ 'active-link': isLinkActive('/contact') }">Contact</a>
-          <a href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5">Accès privé</a>
-        </div>
+
+          <nav id="nav">
+            <h3>Ma petite boutique &#169;</h3>
+ 
+            <ul>
+              <li>
+                <a [routerLink]="['/']" [ngClass]="{ 'active-link': isLinkActive('/') }">Accueil</a>
+                <!-- <a href="/">accueil</a> -->
+              </li>
+              <li>
+                <a [routerLink]="['/card']" [ngClass]="{ 'active-link': isLinkActive('/card') }">Card</a>
+                <!-- <a href="/card">Card</a> -->
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5">Accès privé</a>
+                <!-- <a href="#">blog</a> -->
+              </li>
+            </ul>
+            <div id="icons"></div>
+
+          </nav>
+
+        <!-- </div> -->
       </div>
     </div>
+
+
+
 </header>
 
 <div class="wrapper">
+  <!-- <div class="wrapper" [ngClass]="{'dark-overlay': isNavActive}"> -->
 
 
-  <router-outlet></router-outlet>
+
+  <!-- <router-outlet></router-outlet> -->
+
+  <router-outlet [ngClass]="{ 'dark-overlay': isNavActive }"></router-outlet>
 </div>
 
 <div class="footer">
-  <footer style="background-color: white">
+  <footer >
 
     <p>footer</p>
     <p>quoi de neuf</p>

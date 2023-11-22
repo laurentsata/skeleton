@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { CakeComponent } from './cake/cake.component';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 const routesConfig: Routes = [
 
@@ -24,6 +25,11 @@ const routesConfig: Routes = [
 {
   path: 'cake',
   component: CakeComponent,
+  title: 'Cake'
+},
+{
+  path: 'burger',
+  component: BurgerMenuComponent,
   title: 'Cake'
 },
 
