@@ -132,7 +132,7 @@ nav ul {
   #icons:before {
     content: "\2630";
     color: white;
-    font-size:large;
+
   }
   .active #icons:before {
     content: "\2716";
@@ -158,7 +158,7 @@ nav ul {
   // }
   nav.active ul {
     left: 0;
-    top:16%;
+    top:17%;
     background-color: rgba(0, 0, 0, 0.2); /* Noir transparent */
     z-index: 1000;
 
