@@ -1,5 +1,9 @@
 .container{
   margin-top: 15%; // hauteure à regler en rapport affichage app
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .results {
   display: grid;
@@ -24,6 +28,17 @@ button {
   color: white;
   border-radius: 8px;
 }
+
+ngb-carousel {
+  img {
+    max-width: 100%;  // Assure que l'image ne dépasse pas la largeur du conteneur
+    height: auto;     // Conserver les proportions de l'image
+    max-height: 18rem;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+}
+
 @media (min-width: 500px) and (max-width: 768px) {
   .results {
       grid-template-columns: repeat(2, 1fr);

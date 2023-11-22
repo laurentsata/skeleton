@@ -6,16 +6,36 @@ import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { CakeComponent } from './cake/cake.component';
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, CardComponent, ContactComponent, CakeComponent, RouterModule],
+  imports: [CommonModule, RouterOutlet, HomeComponent, CardComponent, ContactComponent,BurgerMenuComponent, CakeComponent, RouterModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [style({ opacity: 0 }), animate(80000)]),
+      transition(':leave', animate(1000, style({ opacity: 0 }))),
+    ]),
+  ],
 })
 export class AppComponent implements OnInit {
   title = 'skeleton';
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+
 
   constructor(private router: Router, private route: ActivatedRoute, private renderer: Renderer2) {}
 
@@ -45,7 +65,7 @@ export class AppComponent implements OnInit {
     const headerImgId = 'headerImg';
     if (scrollPosition > 100) {
       // Ajoute ici la logique pour masquer l'image du header si nécessaire
-      this.renderer.setStyle(document.getElementById(headerImgId), 'display', 'none');
+      this.renderer.setStyle(document.getElementById(headerImgId), 'display', 'none',);
     } else {
       this.renderer.setStyle(document.getElementById(headerImgId), 'display', 'block');
     }

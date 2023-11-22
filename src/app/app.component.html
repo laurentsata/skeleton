@@ -5,7 +5,7 @@
   style="width: 100%;"
 />
 
-    <div class="navContainer" style=" width: 100%">
+    <!-- <div class="navContainer" style=" width: 100%">
       <div class="links-container">
         <div class="links">
           <a [routerLink]="['/']" [ngClass]="{ 'active-link': isLinkActive('/') }">Accueil</a>
@@ -14,17 +14,68 @@
           <a href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5">Accès privé</a>
         </div>
       </div>
+    </div> -->
+<!--
+    <div class="burgerContainer">
+    <div class="burger" (click)="toggleMenu()">
+      <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+      <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+      <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
     </div>
+
+    <div class="menu" [ngClass]="{ open: isMenuOpen }">
+      <div class="close-button" (click)="toggleMenu()">
+        <div class="close-icon">X</div>
+      </div>
+      <ul class="ul">
+        <li class="li"><a (click)="closeMenu()" routerLink="/" >Accueil</a></li>
+        <li class="li">
+          <a (click)="closeMenu()" routerLink="/card" >Card</a>
+        </li>
+
+
+        <li class="li">
+          <a (click)="closeMenu()" routerLink="/contact" >Contact</a>
+        </li>
+        <li class="li">
+          <a
+            href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
+            >Accès privé</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+
+    <nav id="nav">
+      <h3>Mon site &#9752;</h3>
+      <ul>
+        <li>
+          <a href="#">accueil</a>
+        </li>
+        <li>
+          <a href="#">boutique</a>
+        </li>
+        <li>
+          <a href="#">blog</a>
+        </li>
+      </ul>
+      <div id="icons"></div>
+    </nav>
+
+
 </header>
 
 <div class="wrapper">
+
 
 
   <router-outlet></router-outlet>
 </div>
 
 <div class="footer">
-  <footer style="background-color: white">
+  <footer >
 
     <p>footer</p>
     <p>quoi de neuf</p>

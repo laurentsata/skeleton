@@ -1,0 +1,29 @@
+<div class="burger" (click)="toggleMenu()">
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+</div>
+
+<div class="menu" [ngClass]="{ open: isMenuOpen }">
+  <div class="close-button" (click)="toggleMenu()">
+    <div class="close-icon">X</div>
+  </div>
+  <ul>
+    <li><a (click)="closeMenu()" routerLink="/" [@fadeInOut]>Accueil</a></li>
+    <li>
+      <a (click)="closeMenu()" routerLink="/card" [@fadeInOut]>Card</a>
+    </li>
+    <li><a (click)="closeMenu()" routerLink="/link" [@fadeInOut]>Liens</a></li>
+
+    <li>
+      <a (click)="closeMenu()" routerLink="/contact" [@fadeInOut]>Contact</a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
+        >Accès privé</a
+      >
+    </li>
+  </ul>
+</div>
+
