@@ -18,7 +18,6 @@
               [ngClass]="{ 'active-link': isLinkActive('/') }"
               >Accueil</a
             >
-            <!-- <a href="/">accueil</a> -->
           </li>
           <li>
             <a
@@ -26,28 +25,22 @@
               [ngClass]="{ 'active-link': isLinkActive('/card') }"
               >Card</a
             >
-            <!-- <a href="/card">Card</a> -->
           </li>
           <li>
             <a
               href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
               >Accès privé</a
             >
-            <!-- <a href="#">blog</a> -->
           </li>
         </ul>
         <div id="icons"></div>
       </nav>
 
-      <!-- </div> -->
     </div>
   </div>
 </header>
 
 <div class="wrapper">
-  <!-- <div class="wrapper" [ngClass]="{'dark-overlay': isNavActive}"> -->
-
-  <!-- <router-outlet></router-outlet> -->
 
   <router-outlet [ngClass]="{ 'dark-overlay': isNavActive }"></router-outlet>
 </div>
@@ -61,7 +54,7 @@
       la mise en page avant impression. Le Lorem Ipsum est le faux texte
       standard de l'imprimerie depuis les années 1500, quand un imprimeur
       anonyme assembla ensemble des morceaux de texte pour réaliser un livre
-      spécimen de polices de texte. 
+      spécimen de polices de texte.
     </p>
   </footer>
 </div>

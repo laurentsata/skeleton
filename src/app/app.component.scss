@@ -7,9 +7,6 @@
 .wrapper {
 margin-top: 10%;
   flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
-
-//  margin: 0;
-  flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
   background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.png");
   background-size: cover;
   background-position: center;
@@ -19,6 +16,7 @@ margin-top: 10%;
 .footer {
   margin-top: auto; /* Le footer restera en bas de la page */
 }
+
 .footer p {
   text-align: center;
   padding: 1rem;
@@ -157,7 +155,6 @@ nav ul {
     left: -100%;
     top: 15%;
     flex-direction: column;
-    // background: #f19915;
     width: 100%;
     text-align: center;
     transition: 0.40s;
@@ -166,9 +163,6 @@ nav ul {
     padding: 3px 0;
   }
 
-  // nav li:hover {
-  //   background: #f5a936;
-  // }
   nav.active ul {
     left: 0;
     top:17%;
