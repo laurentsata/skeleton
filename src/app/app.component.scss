@@ -7,7 +7,7 @@
 .wrapper {
 margin-top: 10%;
   flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
-  background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.png");
+  background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 25, 0.2); /* Remplace ces valeurs par la couleur de fond souhaitée et l'opacité désirée */
@@ -172,6 +172,7 @@ nav ul {
   }
 .wrapper {
   z-index: -1 ;
+  background-image: none;
 }
   .dark-overlay {
     position: fixed;
