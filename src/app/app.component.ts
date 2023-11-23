@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     this.setInitialStyles();
   }
 
-  // Méthode pour déterminer si le lien est actif
+  // Méthode pour déterminer si le lien est actif, si oui, active la classe .active-link dans html, directive ngClass
   isLinkActive(routePath: string): boolean {
     return this.router.url === routePath;
   }

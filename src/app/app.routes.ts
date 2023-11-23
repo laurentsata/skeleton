@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CakeComponent } from './cake/cake.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
+
 const routesConfig: Routes = [
 
 {
@@ -32,6 +33,7 @@ const routesConfig: Routes = [
   component: BurgerMenuComponent,
   title: 'Cake'
 },
+
 
 ];
 

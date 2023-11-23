@@ -35,8 +35,7 @@ margin-top: 10%;
 
 
 .transparent-nav {
-  background-color: #dbc19a  !important;
-
+  background-color: rgba(128, 128, 128, 0.8) !important;
 }
 
 
@@ -64,9 +63,6 @@ h3 {
 
 
 header{
-  // background-color: #94939d;
-  // background-color: #f19915;
-  //height: 9%;
   align-items: center;
   box-shadow: 3px 3px 5px gray;
 }
@@ -84,19 +80,24 @@ header{
 li {
   list-style: none;
 }
-a,
+
 a:visited {
+
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+a{
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
 }
 
-
-
-a:hover {
-  color: white;
-  border-bottom: 1px;
+.active-link {
+  font-weight: bold;
+  color: gray;
 }
 
 a:after{
@@ -117,12 +118,11 @@ a:after{
 
 //**** NAVBAR ****
 nav {
-  background: #f19915;
+  background-color: rgb(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  // font-size: calc(0.5rem + 1.5vw);
 }
 nav ul {
   display: flex;
@@ -135,6 +135,10 @@ nav ul {
 }
 
 @media (max-width: 650px) {
+  .active-link {
+   font-weight: inherit;
+    color: white;
+  }
   #icons {
     display: block;
   }
