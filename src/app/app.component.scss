@@ -5,12 +5,17 @@
 }
 
 .wrapper {
-margin-top: 10%;
+  margin-top: 10%;
   flex: 1; /* Permet à 'wrapper' de prendre autant d'espace que possible */
   background-image: url("https://knightparabellum.000webhostapp.com/img/fondGateau.jpg");
   background-size: cover;
   background-position: center;
-  background-color: rgba(255, 255, 25, 0.2); /* Remplace ces valeurs par la couleur de fond souhaitée et l'opacité désirée */
+  background-color: rgba(
+    255,
+    255,
+    25,
+    0.2
+  ); /* Remplace ces valeurs par la couleur de fond souhaitée et l'opacité désirée */
   background-blend-mode: overlay; /* Cette propriété peut être utilisée pour ajuster le mélange de l'image et de la couleur de fond */
 }
 .footer {
@@ -25,17 +30,14 @@ margin-top: 10%;
   font-size: 0.8rem;
 }
 
-
 .navContainer {
   display: flex;
   justify-content: space-between;
 }
 
-
 .transparent-nav {
   background-color: rgba(128, 128, 128, 0.8) !important;
 }
-
 
 .links-container {
   width: 100%;
@@ -47,29 +49,61 @@ h1 {
 }
 h3 {
   text-align: center;
-  color:white;
+  color: white;
 }
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 0rem;
-  background-color: #f19915;
-  height: 2rem;
-  align-items: center;
-}
-
-
-header{
+header {
   align-items: center;
   box-shadow: 3px 3px 5px gray;
 }
-.footer{
-  background-color: #f19915;
+.footer {
+  background-color: #f5ab3b;
+  display: flex;
+  color: white;
+}
+//****Horaire footer ****
+.hContainer {
+  margin-bottom: 5vh;
+  max-width: 100%;
+}
+.scheduleTop, .scheduleBot {
+  display: flex;
+  align-items: flex-start;
+  // background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  margin-bottom: 1vh;
 
+  max-width: 14.78rem;
+  margin-left: 2rem;
 }
 
+.day {
+  text-align: center;
+  font-weight: bold;
+  font-size: 80%;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+.time-slots {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.2rem;
+}
 
+.time-slot {
+  border: 1px solid #ccc;
+  // padding: 0.3rem;
+  margin-right: 0.2rem;
+  width: 6.9rem;
+  font-size: 80%;
+}
+//****************
+
+.tel p {
+  background-color: #f5ab3b;
+  padding: 0;
+}
 * {
   padding: 0;
   margin: 0;
@@ -80,13 +114,12 @@ li {
 }
 
 a:visited {
-
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
 }
 
-a{
+a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -98,18 +131,18 @@ a{
   color: gray;
 }
 
-a:after{
-  content: '';
+a:after {
+  content: "";
   width: 0;
   height: 2px;
   background-color: white;
   position: absolute;
   bottom: -5px;
   right: 0;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
- a:hover:after{
+a:hover:after {
   width: 100%;
   left: 0;
 }
@@ -134,7 +167,7 @@ nav ul {
 
 @media (max-width: 650px) {
   .active-link {
-   font-weight: inherit;
+    font-weight: inherit;
     color: white;
   }
   #icons {
@@ -143,7 +176,6 @@ nav ul {
   #icons:before {
     content: "\2630";
     color: white;
-
   }
   .active #icons:before {
     content: "\2716";
@@ -157,7 +189,7 @@ nav ul {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    transition: 0.40s;
+    transition: 0.4s;
   }
   nav li {
     padding: 3px 0;
@@ -165,15 +197,14 @@ nav ul {
 
   nav.active ul {
     left: 0;
-    top:17%;
+    top: 17%;
     background-color: rgba(0, 0, 0, 0.2); /* Noir transparent */
     z-index: 1000;
-
   }
-.wrapper {
-  z-index: -1 ;
-  background-image: none;
-}
+  .wrapper {
+    z-index: -1;
+    background-image: none;
+  }
   .dark-overlay {
     position: fixed;
     top: 0;
@@ -184,11 +215,33 @@ nav ul {
     z-index: 1; /* Valeur à ajuster selon vos besoins */
   }
 
-
   links-container {
-    position:absolute;
+    position: absolute;
     z-index: 700;
     top: 50px;
   }
 
+  .active {
+    background-color: rgba(0, 0, 0, 0.2); /* Noir transparent */
+    z-index: 1000;
+  }
+  .hContainer {
+    display: flex;
+    flex-direction: column;
+
+    // align-items: center;
+    // margin-bottom: 5vh;
+  }
+  .scheduleTop{
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+  .scheduleBot{
+    margin: 0;
+  }
+  .tel {
+
+    margin-left: 5rem;
+
+  }
 }

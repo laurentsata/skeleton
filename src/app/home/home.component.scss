@@ -1,8 +1,8 @@
 .container{
-  margin-top: 15%; // hauteure à regler en rapport affichage app
+  margin-top: 14%; // hauteure à regler en rapport affichage app
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // flex-direction: column;
+  // justify-content: center;
   align-items: center;
 }
 .results {
@@ -29,8 +29,10 @@ button {
   border-radius: 8px;
 }
 h3{
-  display: none;}
+  display: none;
+}
 ngb-carousel {
+
   img {
     max-width: 100%;  // Assure que l'image ne dépasse pas la largeur du conteneur
     height: auto;     // Conserve les proportions de l'image
@@ -40,6 +42,24 @@ ngb-carousel {
   }
 }
 
+.intro {
+
+  margin-bottom: 10vh;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+
+}
+
+.section {
+  max-width: 60vh;
+  position: absolute;
+  z-index: 99999999;
+  top: 52vh;
+  left: 95vh;
+  background-color: rgb(0, 0, 0, 0.5);
+}
 
 @media (max-width: 600px)  {
   .results {
@@ -55,6 +75,13 @@ ngb-carousel {
 }
 
 h3{
-  display: block;
+  display: none;
+}
+.section
+{
+  position: relative;
+  left: auto;
+  top: auto;
+  // max-width: 30vh;
 }
 }

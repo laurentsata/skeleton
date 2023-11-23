@@ -147,7 +147,7 @@ private showFooter() {
 
 private hideFooter() {
   const footer = document.querySelector('.footer');
-  this.renderer.setStyle(footer, 'display', 'none');
+  this.renderer.setStyle(footer, 'display', 'block');
 }
 }
 

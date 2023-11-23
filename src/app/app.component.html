@@ -35,26 +35,41 @@
         </ul>
         <div id="icons"></div>
       </nav>
-
     </div>
   </div>
 </header>
 
 <div class="wrapper">
-
   <router-outlet [ngClass]="{ 'dark-overlay': isNavActive }"></router-outlet>
 </div>
 
 <div class="footer">
   <footer>
-    <p>footer</p>
-    <p>quoi de neuf</p>
-    <p>
-      Le Lorem Ipsum est simplement du faux texte employé dans la composition et
-      la mise en page avant impression. Le Lorem Ipsum est le faux texte
-      standard de l'imprimerie depuis les années 1500, quand un imprimeur
-      anonyme assembla ensemble des morceaux de texte pour réaliser un livre
-      spécimen de polices de texte.
-    </p>
+    <div class="hContainer">
+      <div class="scheduleTop">
+        <div class="day">
+          Lundi Mardi Mercredi Jeudi Vendredi
+          <div class="time-slots">
+            <div class="time-slot">09:00 - 12:00</div>
+            <div class="time-slot">13:00 - 20:00</div>
+          </div>
+        </div>
+
+        <div class="scheduleBot">
+          <div class="day">
+            Samedi
+            <div class="time-slots">
+              <div class="time-slot">09:00 - 12:00</div>
+              <div class="time-slot">13:00 - 20:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tel">
+        <p>&#x260F; 06 00 00 00 00</p>
+        <p>&#64; leon.jean&#64;mail.fr</p>
+      </div>
+
+    </div>
   </footer>
 </div>
